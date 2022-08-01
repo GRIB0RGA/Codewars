@@ -1,0 +1,1 @@
+const sumOfDifferences = (arr) =>arr.sort((a,b)=>b-a).reduce((acc, val, i, arr) =>  acc + val - arr[i + 1] || acc,0)
