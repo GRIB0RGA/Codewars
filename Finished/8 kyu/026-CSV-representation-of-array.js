@@ -1,0 +1,1 @@
+const toCsvText = (array) => array.map((subArr) => subArr.join(",")).join("\n");
