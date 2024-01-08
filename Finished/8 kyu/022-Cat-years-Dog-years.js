@@ -1,17 +1,20 @@
 var humanYearsCatYearsDogYears = function (humanYears) {
-  const arr = [0, 0, 0];
+  const arr = [humanYears, 0, 0];
+  const animalYearsBelowTwo = humanYears === 1 ? 15 : 24;
   if (humanYears <= 2) {
-    animalYears = humanYears <= 1 ? 15 : 24;
-    return [humanYears, animalYears, animalYears];
+    return [humanYears, animalYearsBelowTwo, animalYearsBelowTwo];
   }
-  dogYears = humanYears - 2;
 
   for (let i = 0; i < humanYears; i++) {
-    if (i + 1 > 2) {
-      arr[1] += 4;
-      arr[2] += 5;
+    if (i <= 1) {
+      continue;
     }
-    arr[0] = humanYears;
+    arr[1] += 4;
+    arr[2] += 5;
   }
+
+  arr[1] += animalYearsBelowTwo;
+  arr[2] += animalYearsBelowTwo;
+
   return arr;
 };
