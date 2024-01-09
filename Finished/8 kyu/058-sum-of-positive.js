@@ -1,0 +1,1 @@
+const positiveSum = (arr) => arr.filter(x=>x>0).reduce((acc,cur)=>acc+cur,0);

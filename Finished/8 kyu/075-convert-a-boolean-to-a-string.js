@@ -1,0 +1,1 @@
+const booleanToString = b => String(b);

@@ -1,0 +1,1 @@
+const getAverage = marks => Math.floor(marks.reduce((p, c) => p+c,0)/marks.length)
