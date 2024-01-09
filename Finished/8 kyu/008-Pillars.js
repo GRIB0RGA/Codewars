@@ -1,1 +1,1 @@
-const pillars = (numPill, dist, width) => numPill !== 1 ? (numPill - 1) * dist * 100 + numPill * width - width * 2 : 0;
+const pillars = (numPill, dist, width) => numPill > 1 ? (numPill - 2) * width + (numPill - 1) * dist * 100 : 0;

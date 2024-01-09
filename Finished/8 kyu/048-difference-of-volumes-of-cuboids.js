@@ -1,0 +1,1 @@
+const findDifference = (a, b) => Math.abs(a.reduce((p, c) => p * c) - b.reduce((p, c) => p * c))

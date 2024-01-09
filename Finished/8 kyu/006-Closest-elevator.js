@@ -1,1 +1,1 @@
-const elevator = (left, right, call) => Math.abs(call-left) < Math.abs(call-right) ? 'left' :'right' 
+const elevator = (left, right, call) => Math.abs(left-call) >= Math.abs(right-call) ? "right" : "left";

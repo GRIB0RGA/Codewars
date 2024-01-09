@@ -1,0 +1,1 @@
+const pipeFix = (numbers) =>[...Array(numbers[numbers.length - 1] - numbers[0]+1)].map((num, i) => numbers[0] + i);
