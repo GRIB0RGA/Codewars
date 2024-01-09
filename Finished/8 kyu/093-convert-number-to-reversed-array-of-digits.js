@@ -1,0 +1,1 @@
+const digitize = (n) => ("" + n).split("").map(num=>num*1).reverse();
