@@ -1,0 +1,1 @@
+const getNumberFromString = (s) => parseInt(s.split("").filter((x) => x==="0" ? true : parseInt(x)).join(""));
