@@ -1,0 +1,1 @@
+const cubeChecker = (volume, side) => volume <= 0 ? false : volume === Math.pow(side, 3);
