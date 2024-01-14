@@ -1,0 +1,1 @@
+const cannonsReady = (gunners) => Object.values(gunners).every(answer=>answer === "aye") ? "Fire!" : "Shiver me timbers!";
