@@ -1,0 +1,1 @@
+const correct = (string) =>  string.replaceAll("S","5").replaceAll("O","0").replaceAll("I","1")
