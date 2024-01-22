@@ -1,0 +1,1 @@
+const generateRange = (min, max, step) => Array(Math.floor((max-min)/step+1)).fill(min).map((num,i)=> num + i * step)
