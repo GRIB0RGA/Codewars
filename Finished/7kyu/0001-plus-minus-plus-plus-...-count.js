@@ -1,0 +1,1 @@
+const catchSignChange = (arr) => arr.map((el) => el === 0 ? 1 : Math.sign(el)).filter((el, i, arr) =>  arr[i + 1] && el !== arr[i + 1]).length
